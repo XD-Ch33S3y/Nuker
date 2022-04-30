@@ -1,7 +1,3 @@
-# Hazard was proudly coded by Rdimo (https://github.com/Rdimo).
-# Copyright (c) 2021 Rdimo#6969 | https://Cheataway.com
-# Hazard Nuker under the GNU General Public Liscense v2 (1991).
-
 import multiprocessing
 import keyboard
 import base64
@@ -29,7 +25,7 @@ threads = 3
 cancel_key = "ctrl+x"
 
 def main():
-    setTitle(f"Hazard Nuker {THIS_VERSION}")
+    setTitle(f"Nuker {THIS_VERSION}")
     clear()
     global threads
     global cancel_key
@@ -92,7 +88,7 @@ def main():
             f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Token: {Fore.RED}')
         validateToken(token)
         if token.startswith("mfa."):
-            print(f'{Fore.RESET}[{Fore.RED}Error{Fore.RESET}] : Just a headsup Hazard wont be able to delete the servers since the account has 2fa enabled')
+            print(f'{Fore.RESET}[{Fore.RED}Error{Fore.RESET}] : Just a headsup Nuker wont be able to delete the servers since the account has 2fa enabled')
             sleep(3)
         processes = []
         #get all servers
@@ -118,7 +114,7 @@ def main():
         print(f'{Fore.BLUE}Do you want to have a icon for the servers that will be created?')
         yesno = input(f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}yes/no: {Fore.RED}')
         if yesno.lower() == "y" or yesno.lower() == "yes":
-            image = input(f'Example: (C:\\Users\\myName\\Desktop\\HazardNuker\\ShitOn.png):\n{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Please input the icon location: {Fore.RED}')
+            image = input(f'Example: (C:\\Users\\myName\\Desktop\\Nuker\\ShitOn.png):\n{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Please input the icon location: {Fore.RED}')
             if not os.path.exists(image):
                 print(f'{Fore.RESET}[{Fore.RED}Error{Fore.RESET}] : Couldn\'t find "{image}" on your pc')
                 sleep(3)
@@ -420,7 +416,8 @@ def main():
             main()
         if secondchoice == "1":
             print(f"""
-{Fore.GREEN}Hazardous: 1
+{Fore.GREEN}
+Hazardous: 1
 {Fore.LIGHTBLACK_EX}Dark: 2
 {Fore.RED}Fire: 3
 {Fore.BLUE}Water: 4
@@ -531,7 +528,3 @@ if __name__ == "__main__":
         main()
     finally:
         Fore.RESET
-
-# Hazard was proudly coded by Rdimo (https://github.com/Rdimo).
-# Copyright (c) 2021 Rdimo#6969 | https://Cheataway.com
-# Hazard Nuker under the GNU General Public Liscense v2 (1991).
